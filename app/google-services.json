@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "1010162910390",
+    "firebase_url": "https://prediction-2dbd9.firebaseio.com",
+    "project_id": "prediction-2dbd9",
+    "storage_bucket": "prediction-2dbd9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1010162910390:android:21b79bfcbf196826",
+        "android_client_info": {
+          "package_name": "com.akansh.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1010162910390-d7bmiml0pjsd4dek7dh2l26ggbkuqq5k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.akansh.myapplication",
+            "certificate_hash": "03BF3031E013F369424FE91774A00D0D4A6BDECB"
+          }
+        },
+        {
+          "client_id": "1010162910390-34751nedqvd0l9ssj8sskue5eep1klml.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.akansh.myapplication",
+            "certificate_hash": "E592CF4AAE33994F4301A2498F0E1C0BB8F83ABC"
+          }
+        },
+        {
+          "client_id": "1010162910390-02cc4s17ipueviqg2q0ofjsnl5ch6pin.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANjVUS0syg9mDmCh76zGHFMGFfz5gXOUQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1010162910390-02cc4s17ipueviqg2q0ofjsnl5ch6pin.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

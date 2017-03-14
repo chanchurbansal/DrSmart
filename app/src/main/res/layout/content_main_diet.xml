@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/single_list_item_view">
+    <TextView
+        android:id="@+id/food_serve"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#a8e9bb"
+        android:text="Food  Servings"
+        android:fontFamily="sans-serif-condensed"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="20sp"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:id="@+id/listView1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/food_serve"
+        android:nestedScrollingEnabled="true"
+        android:isScrollContainer="false"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"/>
+    <TextView
+        android:id="@+id/food_types"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#a8e9bb"
+        android:layout_below="@id/listView1"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Food types"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="20sp"
+        android:paddingTop="10dp"
+        android:gravity="center" />
+    <LinearLayout
+        android:id="@+id/listView"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/food_types"
+        android:nestedScrollingEnabled="true"
+        android:orientation="vertical"
+        android:isScrollContainer="false"
+        android:paddingBottom="70dp" />
+
+
+</RelativeLayout>

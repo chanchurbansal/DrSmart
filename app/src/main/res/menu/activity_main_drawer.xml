@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/x_ray"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_predict"
+            android:icon="@drawable/doctor"
+            android:title="Diagnosis" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_book"
+            android:title="History" />
+        <item
+            android:id="@+id/nav_changedetails"
+            android:icon="@drawable/change_user"
+            android:title="Change Details" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout_rounded_up48"
+            android:title="Log Out" />
+     <!--   <item
+            android:id="@+id/nav_monitor"
+            android:icon="@drawable/hr"
+            android:title="Heart Rate Monitor" />
+-->
+
+    </group>
+<!--
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+    -->
+
+</menu>

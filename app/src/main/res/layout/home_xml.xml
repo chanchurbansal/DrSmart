@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    >
+    <ScrollView
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"    >
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:paddingBottom="10dp"
+       >
+
+
+    <TextView
+        android:text="Diet Chart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/home_txt"
+        android:gravity="center"
+        android:fontFamily="cursive"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fakecard"
+        android:elevation="10dp"
+        android:layout_below="@+id/home_txt"
+        app:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="8dp"
+        card_view:contentPadding="10dp"
+        card_view:cardElevation="13dp"
+        card_view:cardBackgroundColor="?android:attr/colorButtonNormal"
+        app:cardElevation="15dp">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/imageButton"
+            android:paddingRight="5px"
+            android:paddingBottom="5px"
+            android:elevation="24dp" />
+    </android.support.v7.widget.CardView>
+
+
+       <TextView
+           android:text="Heart Rate Monitor"
+           android:layout_width="match_parent"
+           android:layout_below="@+id/fakecard"
+           android:layout_height="wrap_content"
+           android:id="@+id/home_txt_2"
+           android:textColor="@android:color/holo_blue_dark"
+           android:textStyle="normal|bold"
+           android:textSize="24sp"
+           android:fontFamily="cursive"
+           android:gravity="center"
+           android:layout_marginTop="20dp" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fakecard2"
+        android:layout_below="@+id/home_txt_2"
+        app:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="8dp"
+        card_view:contentPadding="10dp"
+        card_view:cardElevation="13dp"
+        card_view:cardBackgroundColor="?android:attr/colorButtonNormal"
+        app:cardElevation="15dp"
+        android:elevation="10dp">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/monitorbutton"
+            android:paddingRight="5px"
+            android:paddingBottom="5px"
+            android:elevation="24dp" />
+    </android.support.v7.widget.CardView>
+
+       <TextView
+           android:text="User Statistics"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/fakecard2"
+           android:id="@+id/home_txt2"
+           android:gravity="center"
+           android:fontFamily="cursive"
+           android:textStyle="normal|bold"
+           android:textSize="24sp"
+           android:textColor="?android:attr/colorFocusedHighlight"
+           android:layout_marginTop="20dp" />
+
+       <!-- icon -->
+        <android.support.v7.widget.CardView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/itemContainer_home"
+            android:layout_below="@+id/home_txt2"
+            android:clickable="true"
+            app:cardUseCompatPadding="true"
+            card_view:cardCornerRadius="8dp"
+            card_view:contentPadding="10dp"
+            android:layout_centerHorizontal="true"
+            card_view:cardElevation="13dp"
+            card_view:cardBackgroundColor="#dcffed"
+            app:cardElevation="15dp">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                >
+
+
+                <com.akansh.myapplication.CircleDisplay
+                    android:id="@+id/circleDisplay1"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="#06363e"
+                    android:id="@+id/total_pred"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center_vertical"
+                    android:breakStrategy="balanced"
+                    android:autoText="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_toLeftOf="@+id/circleDisplay1"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+       <android.support.v7.widget.CardView
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/itemContainer_home2"
+           android:layout_below="@+id/itemContainer_home"
+           android:clickable="true"
+           app:cardUseCompatPadding="true"
+           card_view:cardCornerRadius="8dp"
+           card_view:contentPadding="10dp"
+           android:paddingBottom="10dp"
+           android:layout_centerHorizontal="true"
+           card_view:cardElevation="13dp"
+           card_view:cardBackgroundColor="#dcffed"
+           app:cardElevation="15dp">
+
+           <RelativeLayout
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               >
+
+
+               <com.akansh.myapplication.CircleDisplay
+                   android:id="@+id/circleDisplay2"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginTop="15dp"
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   android:layout_marginRight="10dp"
+                   android:layout_marginLeft="5dp"
+                   android:layout_marginBottom="15dp"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textColor="#06363e"
+                   android:id="@+id/right_pred"
+                   android:gravity="center_vertical"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginRight="10dp"
+                   android:paddingRight="10dp"
+                   android:layout_toLeftOf="@+id/circleDisplay2"
+                   android:layout_centerVertical="true" />
+           </RelativeLayout>
+
+       </android.support.v7.widget.CardView>
+
+       <TextView
+           android:text="About Us"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/itemContainer_home2"
+           android:id="@+id/home_txt3"
+           android:gravity="center"
+           android:fontFamily="cursive"
+           android:textStyle="normal|bold"
+           android:textSize="24sp"
+           android:textColor="@android:color/holo_red_light"
+           android:layout_marginTop="20dp" />
+
+
+       <TextView
+           android:text="Objective of this project is to develop an app which will predict diseases when provided with certain details. For many diseases there is no concrete test which will predict whether a person is suffering from the disease or not. Our app will help in diagnosing these diseases. It is useful to doctors because it will help them to decide the right course of treatment for the patient. It will also recommend the diet plan to the patient."
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/home_txt3"
+           android:id="@+id/text_aboutus"
+           android:fontFamily="serif"
+           android:textSize="16sp"
+           android:textColor="?android:attr/actionMenuTextColor"
+           android:layout_marginTop="20dp"
+           android:paddingBottom="40dp"
+           android:textStyle="normal|italic"
+           android:gravity="center" />
+
+
+   </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
